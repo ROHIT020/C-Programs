@@ -4,11 +4,11 @@ int main()
 {
     int n;
     cin>>n;
-    int sum=0;
+    int target=0;
     while(n>0){
-        sum+=(n%10);
-        n /=10;
+        target++;
+        n=n/10;
     }
-    cout<<sum<<endl;
+    cout<<target<<endl;
     return 0;
 }
